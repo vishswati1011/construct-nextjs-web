@@ -1,5 +1,5 @@
 /* Header.css */
-header {
+.navbar_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,21 +18,21 @@ header {
     margin-left: 100px;
 }
 
-nav ul {
+.nav_div ul {
     list-style-type: none;
     display: flex;
     margin-right: 100px;
 }
 
-nav ul li {
+.nav_div ul li {
     margin-right: 30px; 
 }
 
-nav ul li:last-child {
+.nav_div ul li:last-child {
     margin-right: 0;
 }
 
-nav ul li a{
+.nav_div ul li a{
     text-decoration: none;
     font-size: 20px;
     color:black; 
@@ -96,7 +96,7 @@ div ul li{
 /* Media query for mobile responsiveness */
 
 @media (min-width : 350px ) and ( max-width: 768px ){
-    header {
+    .navbar_header {
         height: 120px;
         display: grid;
         grid-template-columns: 1fr 1fr;

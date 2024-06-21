@@ -5,7 +5,7 @@ import styles from './project.module.css'
 import {getAllProject} from '../../../service/projects';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
-
+import PlayVideo from '../../component/upcoming/videoModal';
 export default function UpcomingProjects() {
 
 
@@ -48,7 +48,9 @@ export default function UpcomingProjects() {
                     {project.desc}
                     </p>
                   <span className={styles.video_play}  >
-                     <Link href={`${project.video}`} className={styles?.link_css}>view video</Link></span>
+                     {/* <Link href={`${project.video}`} className={styles?.link_css}>view video</Link> */}
+                  <PlayVideo projectVideo={project?.video}/>
+                     </span>
                   <span className={styles.video_play + " " + styles.connect}>
                   <Link href={`${project.connect}`} className={styles?.link_css}>
                     connect
@@ -73,7 +75,11 @@ export default function UpcomingProjects() {
                 {project.desc}
                 </p>
               <span className={styles.video_play}  >
-                 <Link href={`${project.video}`} className={styles?.link_css}>view video</Link></span>
+                 {/* <Link href={`${project.video}`} className={styles?.link_css}> */}
+                  {/* view video */}
+                  <PlayVideo projectVideo={project?.video}/>
+                 {/* </Link> */}
+                 </span>
               <span className={styles.video_play + " " + styles.connect}>
               <Link href={`${project.connect}`} className={styles?.link_css}>
                 connect

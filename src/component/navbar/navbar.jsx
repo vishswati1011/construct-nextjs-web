@@ -28,7 +28,7 @@ const Header = () => {
   }, [path]);
 
   return (
-    <header>
+    <header className="navbar_header">
       <div className="logo">
         <Link href="/">
         <Image
@@ -41,7 +41,7 @@ const Header = () => {
         </Link>
       </div>
       {windowSize?.width > 768 ? (
-        <nav>
+        <nav className="nav_div">
           <ul>
             <li>
               <Link

@@ -61,6 +61,13 @@
     padding: 5px;
 
 }
+.video_play :hover{
+    cursor: pointer;
+}
 .connect{
     margin-left: 10px;
+}
+.connect :hover{
+    color:white;
+    text-decoration: none;
 }

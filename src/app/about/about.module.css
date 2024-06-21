@@ -1,0 +1,84 @@
+.main {
+     justify-content: center;
+     display: flex;
+     margin-top: 20vh;
+}
+.aboutdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+}
+.aboutTitle{
+    height: auto;
+    margin-top: 30px;
+}
+.about_sub_card{
+    display: column;
+}
+.aboutdiv h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #675204;
+}
+.aboutdiv p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.about_card_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:3rem;
+}
+
+.about_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width:300px;
+    height: 100px;
+    gap:2rem;
+}
+
+@media (min-width : 350px ) and ( max-width: 900px ){
+
+    .main {
+        padding: 10px;
+    }
+
+    .aboutdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1200px;
+        margin-top: 20vh;
+        padding: 20px;
+    }
+    .aboutTitle{
+        height: auto;
+        margin-top: 30px;
+    
+    }
+    .about_card_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:3rem;
+    }
+    
+    .about_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        width:240px;
+        height:auto;
+        gap:1rem;
+        padding: 10px
+    }
+}

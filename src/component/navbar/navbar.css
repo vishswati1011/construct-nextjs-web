@@ -1,0 +1,137 @@
+/* Header.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top:0;
+    height:80px
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 100px;
+}
+
+nav ul li {
+    margin-right: 30px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black; 
+}
+.active_link_css{
+    color: #AC9543;
+}
+.link_css::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background: #AC9543;
+    transition: width 0.5s ease;
+}
+.link_css:hover {
+    color: #AC9543;
+}
+.link_css:hover::after {
+    width: 100%;
+}
+.dropdown-content { 
+    display: inline;
+    position: absolute;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .dropdown-content a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .dropdown {
+    position: relative;
+
+  }
+  .dropdown-content {
+    position: absolute;
+    top: 100%; /* Position it at the bottom of the .dropdown container */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Optional: make it the same width as the input */
+  }
+  .dropdown-content li {
+    margin: 10px 0;
+  }
+div ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 100px;
+}
+div ul li{
+    text-decoration: none;
+    font-size: 12px;
+    color:black; 
+}
+/* Media query for mobile responsiveness */
+
+@media (min-width : 350px ) and ( max-width: 768px ){
+    header {
+        height: 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+    .logo_image {
+        width: 100px;
+        height: 50px;
+    
+    }
+   
+     .dropdown {
+        position: relative;
+    
+      }
+      .dropdown-content {
+        position: absolute;
+        top: 100%; /* Position it at the bottom of the .dropdown container */
+        left: 0; /* Align it to the left */
+        width: 100%; /* Optional: make it the same width as the input */
+      }
+      .dropdown-content li {
+        margin: 10px 0;
+      }
+    div ul {
+        list-style-type: none;
+        display: flex;
+        margin-right: 100px;
+    }
+    div ul li{
+        text-decoration: none;
+        font-size: 12px;
+        color:black; 
+    }
+}

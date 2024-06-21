@@ -1,0 +1,33 @@
+.footer_div {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #675204;
+    color: white;
+    padding: 20px;
+  }
+
+
+
+  .icon{
+   text-decoration: none;
+   color: white;
+  }
+  
+@media (min-width : 350px ) and ( max-width: 900px ){
+
+  .footer_div {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: #675204;
+    color: white;
+    padding: 20px;
+  }
+}

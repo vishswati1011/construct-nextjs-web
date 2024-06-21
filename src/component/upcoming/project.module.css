@@ -1,0 +1,66 @@
+.project_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    padding: 50px;
+}
+
+.project_title h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.upcoming{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:2rem;
+}
+
+.link_css{
+    text-decoration: none;
+    color:white;
+}
+
+.project_blog {
+    flex-direction: column;
+    display: flex;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+
+.image_css{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 3s;
+
+}
+.image_css:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.image_div{
+    padding: 10px;
+    border-radius: 5px;
+}
+.content_div{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.video_play{
+    background-color: #998b03;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.connect{
+    margin-left: 10px;
+}

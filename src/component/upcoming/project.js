@@ -62,7 +62,7 @@ export default function UpcomingProjects() {
               <Image
                 width={560}
                 height={300}
-                src="/images/colony.jpeg"
+                src={project?.image}
                 alt="#upcoming"
                 className={styles.image_css}
               />

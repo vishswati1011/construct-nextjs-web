@@ -18,11 +18,11 @@ export default function Project() {
           </div>
         ))}
       </div>
-      <div className={styles.project_button}>
+      {/* <div className={styles.project_button}>
         <Link href="/upcoming">
           <button>Our Upcoming Projects</button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

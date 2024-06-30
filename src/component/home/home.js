@@ -17,6 +17,7 @@ export default function Carousel() {
   const visibleSlides = windowSize && windowSize.width > 370 ? 4 : 1;
 
   const handleNextSlide = () => {
+    console.log("click", );
     setCurrentSlide((prevSlide) =>
       prevSlide === totalSlides - visibleSlides ? 0 : prevSlide + 1
     );
@@ -27,9 +28,9 @@ export default function Carousel() {
       prevSlide === 0 ? totalSlides - visibleSlides : prevSlide - 1
     );
   };
-
+console.log(currentSlide,"currentSlide")
   useEffect(() => {
-    const intervalId = setInterval(() => handleNextSlide(), 5000); 
+    const intervalId = setInterval(() => handleNextSlide(), 2000); 
 
     return () => clearInterval(intervalId);
   }, []); 
@@ -127,13 +128,13 @@ export default function Carousel() {
         </Link>
       </div>
 
-      <UpcomingProjects />
+      {/* <UpcomingProjects />
 
       <div className={styles.project_button}>
         <Link href="/upcoming">
           <button>View More</button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
